@@ -1,0 +1,540 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+@font-face{
+    font-family: 辰宇落雁體;
+    src: url(../PersonalWeb/ChenYuluoyan-Thin-Monospaced.eot),url(../PersonalWeb/ChenYuluoyan-Thin-Monospaced.ttf),url(../PersonalWeb/ChenYuluoyan-Thin-Monospaced.woff);
+}
+
+body{
+    max-width: 100%;
+    background:#FEF7E6 ;
+}
+.wrap{   
+    overflow: hidden;
+}
+.header{  
+    width: 100%;
+    height: 55px;
+    background: rgba(254,247,230,.95);
+    position: fixed;
+    z-index: 10;
+    
+}
+.logo-contain{
+    display: flex;
+    align-items: center;
+    float: left;
+    padding-top: 5px;
+}
+.github{
+    display: block;
+    float: right;
+    width: 35px;
+    height: 35px;
+    background-image: url(img/github-mark.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    white-space: nowrap;
+    text-indent: 101%;
+    overflow: hidden;
+    margin: 10px 5% 10px 10px;
+}
+.github:hover{
+    background-image: url(img/github.png);
+}
+.logo{
+    background-image: url(../PersonalWeb/img/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    white-space: nowrap;
+    text-indent: 101%;
+    overflow:hidden ;
+    display:block;
+    height: 50px;
+    margin-left: 15px;
+}
+hr{
+    margin: 10px 15px 10px 0;
+    height: 25px;
+    border: 1px solid #2B2B2B ;
+}
+.header h5{
+    font-family: 'Yeseva One';
+    font-weight: lighter;
+}
+.menu{
+    display: flex;
+    margin-left: 50px;
+    float: right;
+    padding-top: 10px;
+}
+.menu li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 25px;
+    color: #2B2B2B;
+    font-weight: 700;
+}
+.menu li a:hover{
+    color: #FFB000;
+}
+.content{
+    width: 100%;
+}    
+
+.first{
+    display: flex;
+    font-family: 辰宇落雁體;
+    text-align: center;
+    line-height: 1.5; 
+    padding-top: 10%;
+    align-items: center;
+}
+.img{
+    width: 40%;
+}
+.first img{
+    max-width: 120%;
+    height: auto;  
+    margin: 0 auto;
+}
+.first-text{
+    background-image: url(../PersonalWeb/img/title-bg.png);
+    background-repeat: no-repeat;
+    background-size: 180%;
+    background-position: 0 40%;
+    padding: 20px 0 20px 8%;
+    margin: 10% 0 15%;
+    width: 80%; 
+}
+.first-text h1{
+    font-size: 72px;    
+}
+.first-text h2{ 
+    font-size: 48px;
+}
+.first-text p{   
+    font-size: 24px;  
+}
+.first-text p span::before{   
+    content: '';
+}
+.about {
+    display: flex;
+    align-items: center;
+    padding-top: 55px;
+}
+.about h2{
+    padding: 0 6%;
+    font-family:'Yeseva One';
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: #2B2B2B;
+    white-space: pre;
+}
+.about h2 span{
+    font-size: 28px;
+    letter-spacing: 1em;
+}
+.about h2 span::before{
+    content: '\a';
+}
+.title{
+    font-size: 32px;
+    background-image: url(../PersonalWeb/img/title.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 1.5%;
+    padding: 20px;
+    font-family: 辰宇落雁體;
+    line-height: 1.5;
+    color: #1B2F4D;
+}
+.about-content{
+    width: 70%; 
+    margin: 0 auto;
+    
+}
+.introduce{
+    text-align: justify;
+    width: 90%;   
+}
+.introduce span{
+    font-weight: 700;
+}
+.about-content p{
+    color: #474747;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    margin-left: 3%;
+}
+.about-skill{
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.about-skill h4{
+    font-size: 18px;
+    line-height: 2;
+    font-family: Noto Sans;
+    font-weight: 600;
+    color: #474747;
+    margin-left: 25px;
+}
+.about-skill p{
+    display: inline-block;
+    width: 25%;
+    padding-left: 15px;
+    line-height: 2;
+}
+.front{
+    width: 45%; 
+}
+.design{
+    width: 45%;  
+     
+}
+.level{
+    vertical-align: middle;
+    display: inline-block;   
+    padding-left: 10%;
+}
+.circle{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #474747 ;
+    background:#474747 ;
+    border-radius: 14px;
+}
+.circle-line{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #474747 ;
+    border-radius: 14px;
+}
+.learn-content span{
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+.portfolio{
+    padding-top: 55px;
+}
+.portfolio h2{
+    font-family:'Yeseva One';
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: #2B2B2B;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.portfolio h3{
+    font-family:'Yeseva One';
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: #2B2B2B;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.portfolio h2 span{
+    font-size: 28px;
+    letter-spacing: 1em;
+}
+.portfolio-content{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-left: 5%;
+}
+.portfolio-item{
+    width: 31.3333%;
+    margin-bottom: 20px;   
+}
+.portfolio-item:hover .bg{
+    background: #FFB000;
+}
+.portfolio-item:hover .item-title{
+    color: #FFB000;
+}
+.portfolio-item a{
+    text-decoration: none;
+    color: #1B2F4D;
+    line-height: 1.5;
+    
+}
+.portfolio-item a p{
+    padding: 0 8% 0 0;
+}
+
+.item-img{
+   position: relative; 
+   margin-bottom: 25px;
+   height: auto;
+   
+}
+.item-img img{
+   display: block;
+   width: 85%;
+   
+   border: 2px solid #FFB000;
+}
+.bg{
+    position: absolute;
+   background: #1B2F4D;
+    width: 55%;
+    height: 65%;
+    bottom: -8%;
+    right: 10%;
+    z-index: -1;
+}
+.portfolio-item h4{
+    
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: Noto Sans;
+    font-weight: 600;
+    color: #1B2F4D;
+    
+}
+
+@media(max-width:1000px){
+    .first img{
+        max-width: 120%;
+    }
+    .first-text h1{
+        font-size: 64px;    
+    }
+    .first-text h2{ 
+        font-size: 36px;
+    }
+    .first-text p{   
+        font-size: 24px;  
+    }
+    
+    .about h2{
+        padding: 0 3%;
+        font-size: 36px;
+        letter-spacing: 1px;
+    }
+    .introduce{
+        text-align: justify;
+        width: 90%;   
+    }
+    .portfolio-item{
+        width: 48%;
+        margin-bottom: 20px;   
+    }
+    .portfolio h3{
+        text-align: center;
+    }
+}
+@media(max-width:768px){
+    .first{
+        display: block;
+        position: relative;
+        padding-top: 20%;
+        margin-bottom: 100px;
+    }
+    .first img{
+        max-width: 100%;
+    }
+    .img{
+        position: absolute;
+        width: 40%;
+        top: 20%;
+        left: 0;
+    }
+    .first-text{
+        background-size: 140%;
+        background-position: 40% 40%;
+        padding: 0 0 0 15%;
+        margin: 0 0 0 0; 
+        width: 90%; 
+        text-align: left;
+    }
+    .first-text h1{
+        text-align: center; 
+     
+    }
+    .first-text h2{ 
+        font-size: 28px;
+        text-align: center;
+        margin-left: 10%;
+    }
+    .first-text p{   
+        font-size: 20px;
+        text-align: center;
+    }
+    .first-text p span::before{   
+        content: '\a          ';
+        
+        white-space: pre;
+        
+    }
+    .about {
+        display: block;
+        padding-top: 55px;
+    }
+    .about h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .about h2 span{
+        padding-left: 1em;
+    }
+    .about-content{
+        width: 80%; 
+    }
+    .about h2 span::before{
+        content: '';
+    }
+    .level{
+        padding-left: 15%;
+    }
+
+}
+@media(max-width:600px){
+    .menu{
+        display:none;
+        margin-left: 50px;
+        float: right;
+        padding-top: 10px;
+    }
+    .first{
+        margin-bottom: 10%;
+    }
+    .first-text{
+        position: relative;
+        padding: 0 0 0 10%;
+        margin: 20% 0 0 0;  
+        background-image: linear-gradient(to top,rgba(245,245,245,1),rgba(245,245,245,0));
+    }
+
+    .first-text h1{
+        text-align: right; 
+        padding-right: 10%;
+        font-size: 40px;
+        padding-top: 15%;
+    }
+    .first-text h2{ 
+        padding-right: 10%;
+        text-align: right; 
+        font-size: 26px;
+    }
+    .first-text p{   
+        padding-right: 10%;
+        text-align: right; 
+        font-size: 18px;
+        padding-bottom: 10%;
+       
+    }
+    .img{
+        position: absolute;
+        width: 70%;
+        top: 10%;
+        left: 0;
+    }
+    .img img{
+        z-index: -1;
+        
+    }
+    .about {
+        display: block;
+        padding-top: 55px;
+    }
+    .about h2{
+        font-size: 24px;
+        
+    }
+    .about h2 span{
+        font-size: 24px;
+        padding: 0 1%;
+        letter-spacing: 10px;
+    }
+    .about-content{
+        width: 90%; 
+    }
+    .level{
+        margin-left: 5%;
+    }
+    .portfolio h2{
+        
+        font-size: 24px;
+        
+    }
+    .portfolio h3{
+        font-size: 22px;
+    }
+    .portfolio h2 span{
+        font-size: 24px;
+        letter-spacing: 10px;
+    }
+    .portfolio-item{
+        width: 98%;
+        margin-left: 5%;
+        margin-bottom: 20px;   
+    }
+}
+@media(max-width:460px){
+    
+    .first-text h2{ 
+        font-size: 20px;
+    }
+    .first-text p{   
+        font-size: 16px;  
+    }
+}

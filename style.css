@@ -88,7 +88,7 @@ body{
     background-image: url(img/github.png);
 }
 .logo{
-    background-image: url(../PersonalWeb/img/logo.svg);
+    background-image: url(img/logo.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
@@ -145,7 +145,7 @@ hr{
     margin: 0 auto;
 }
 .first-text{
-    background-image: url(../PersonalWeb/img/title-bg.png);
+    background-image: url(img/title-bg.png);
     background-repeat: no-repeat;
     background-size: 180%;
     background-position: 0 40%;
@@ -188,7 +188,7 @@ hr{
 }
 .title{
     font-size: 32px;
-    background-image: url(../PersonalWeb/img/title.png);
+    background-image: url(img/title.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 1.5%;
@@ -209,11 +209,11 @@ hr{
 .introduce span{
     font-weight: 700;
 }
-.about-content p{
+.about-content p,.about-content ul li{
     color: #474747;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1.5px;
-    line-height: 25px;
+    line-height: 30px;
     margin-left: 3%;
 }
 .about-skill{

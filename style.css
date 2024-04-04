@@ -209,7 +209,7 @@ hr{
 .introduce span{
     font-weight: 700;
 }
-.about-content p,.about-content ul li{
+.about-content p,.about-content li{
     color: #474747;
     font-size: 18px;
     letter-spacing: 1.5px;

@@ -1,0 +1,31 @@
+@mixin text-logo{
+    white-space: nowrap;
+    text-indent: 101%;
+    overflow:hidden ;
+    display:block;
+}
+@mixin w1000{
+    @media(max-width:1000px){
+        @content
+    }
+}
+@mixin w768{
+    @media(max-width:768px){
+        @content
+    }
+}
+@mixin w650{
+    @media(max-width:650px){
+        @content
+    }
+}
+@mixin w600{
+    @media(max-width:600px){
+        @content
+    }
+}
+@mixin w460{
+    @media(max-width:460px){
+        @content
+    }
+}

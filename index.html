@@ -12,7 +12,7 @@
     <meta name="og:img" content="https://img.onl/0M57Wg">
 
     <title>JY Li's Personal WebPage </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,250 +21,238 @@
 <body>
     <div class="wrap">
         <div class="header">
-            <div class="logo-contain">
-                <a href="#" class="logo">JY Li's Personal WebPage</a>
-                <hr>
-                <h5>JIA-YING,LI</h5>
+            <div class="header__content">
+                <a href="#" class="header__logo">JY Li's Personal WebPage</a>
+                <hr class="header__line">
+                <h5 class="header__title">JIA-YING,LI</h5>
             </div>
             
             
-            <a href="https://github.com/jylee0805" class="github" title="GitHub" target="_blank">GitHub</a>
-            <ul class="menu">
-                <li><a href="#about">關於我</a></li>
-                <li><a href="#portfolio">網頁作品</a></li>
+            <a href="https://github.com/jylee0805" class="header__github" title="GitHub" target="_blank">GitHub</a>
+            <ul class="header__menu">
+                <li><a href="#about" class="header__link">關於我</a></li>
+                <li><a href="#portfolio" class="header__link">網頁作品</a></li>
             </ul>
         </div>
         <div class="content">
-            <div class="first">
-                <div class="img"><img src="img/me++.png" alt=""></div>
+            <div class="main">
+                <div class="main__imgBox"><img src="img/me++.png" alt="" class="main__img"></div>
                 
-                <div class="first-text">
-                    <h1>李佳穎</h1>
-                    <h2>現在的自己，就是最好的自己</h2>
-                    <p>努力成為一名能夠<span>給予使用者優良體驗的前端工程師</span></p>
+                <div class="main__title">
+                    <h1 class="main__name">李佳穎</h1>
+                    <h2 class="main__motto">現在的自己，就是最好的自己</h2>
+                    <p class="main__expectation">努力成為一名能夠<span>給予使用者優良體驗的前端工程師</span></p>
                 </div>
             </div>
             <div class="about" id="about">
-                <h2>About Me <span>關於我</span></h2>
-                <div class="about-content">
-                    <span class="title">簡介</span>
-                    <p class="introduce">　　家中對小孩抱持「相信孩子知道自己在做什麼」的教育觀，因此培養我<span>獨立自主</span>的個性，擁有對自己的決定負責的態度。
+                <h2 class="about__title">About Me <span class="about__titleCh">關於我</span></h2>
+                <div class="about__content">
+                    <span class="about__subtitle">簡介</span>
+                    <p class="about__introduce">　　家中對小孩抱持「相信孩子知道自己在做什麼」的教育觀，因此培養我<span class="about__highlight">獨立自主</span>的個性，擁有對自己的決定負責的態度。
                         <br>
-                        　　大學期間，讓自己多接觸不一樣的事物，在吉他社擔任秘書的角色，處理社團相關文書工作訓練自己的統整能力及對細節的注意；舉辦活動的過程中，從最初的沉默不語到勇於表達想法、不害怕衝突，<span>我知道所有想法的碰撞都是為了成就更好的呈現</span>；也培養我遇到問題時隨機應變的能力。參與社團，讓我體認到，我很喜歡大家一起努力的感覺，對於團隊向心力，只要是力能所及的事我都會去做，<span>我認為只要有人開始散發這樣的氛圍，就能逐漸凝聚大家</span>。
+                        　　大學期間，讓自己多接觸不一樣的事物，在吉他社擔任秘書的角色，處理社團相關文書工作訓練自己的統整能力及對細節的注意；舉辦活動的過程中，從最初的沉默不語到勇於表達想法、不害怕衝突，<span class="about__highlight">我知道所有想法的碰撞都是為了成就更好的呈現</span>；也培養我遇到問題時隨機應變的能力。參與社團，讓我體認到，我很喜歡大家一起努力的感覺，對於團隊向心力，只要是力能所及的事我都會去做，<span class="about__highlight">我認為只要有人開始散發這樣的氛圍，就能逐漸凝聚大家</span>。
                         <br>
-                        　　大三的專題，由我負責介面設計及佈局撰寫，雖非專業設計，但對於美感有屬於自己的一套標準，也因為這次機會讓我對於 UI/UX 的設計及程式撰寫產生興趣；大四上學期有幸參與中科院的研究計畫，負責設計 UI 以及使用 MATLAB 撰寫介面，因為 MATLAB 在過去沒有學習過，參與這次的計畫不僅訓練自己<span>統整資料、快速學習</span>的能力，在與學長合作的過程中，溝通能力也有進步；大四下學期在國家衛武營藝術表演中心擔任資訊室實習生，協助處理電腦問題，實習期間部門提供我修改內部網站的機會、參與網站聚焦的會議，在過程中發現自己完成網頁的優化時，獲得很大的成就感，讓我<span></span>開始有了未來想當前端工程師的念頭。
+                        　　大三的專題，由我負責介面設計及佈局撰寫，雖非專業設計，但對於美感有屬於自己的一套標準，也因為這次機會讓我對於 UI/UX 的設計及程式撰寫產生興趣；大四上學期有幸參與中科院的研究計畫，負責設計 UI 以及使用 MATLAB 撰寫介面，因為 MATLAB 在過去沒有學習過，參與這次的計畫不僅訓練自己<span class="about__highlight">統整資料、快速學習</span>的能力，在與學長合作的過程中，溝通能力也有進步；大四下學期在國家衛武營藝術表演中心擔任資訊室實習生，協助處理電腦問題，實習期間部門提供我修改內部網站的機會、參與網站聚焦的會議，在過程中發現自己完成網頁的優化時，獲得很大的成就感，讓我<span class="about__highlight">開始有了未來想當前端工程師的念頭。</span>
                         <br>
-                        　　畢業後並沒有選擇馬上就業，想讓自己有一段時間多方嘗試，確定是否想往前端邁進。後來有幸參與到六角學院的實習培育計畫，前三個月有系統性的<span>自學前端相關技能(HTML、CSS、基礎JavaScript)</span>，遇到難題時發現自己處於很期待、很想知道如何解決的狀態，<span>更確定想往網頁這方面發展</span>；後續順利錄取影音課程的實習助教，一開始面對學員的問題及作業都需要花上一段時間回復，身為實習助教，會希望自己能夠發現學員觀念錯誤的地方並給予協助，在檢視各種作業、問題的同時，也能提升自己基礎的能力。
+                        　　畢業後並沒有選擇馬上就業，想讓自己有一段時間多方嘗試，確定是否想往前端邁進。後來有幸參與到六角學院的實習培育計畫，前三個月有系統性的<span class="about__highlight">自學前端相關技能(HTML、CSS、基礎JavaScript)</span>，遇到難題時發現自己處於很期待、很想知道如何解決的狀態，<span class="about__highlight">更確定想往網頁這方面發展</span>；後續順利錄取影音課程的實習助教，一開始面對學員的問題及作業都需要花上一段時間回復，身為實習助教，會希望自己能夠發現學員觀念錯誤的地方並給予協助，在檢視各種作業、問題的同時，也能提升自己基礎的能力。
                         <br>
                         　　這四年多的經歷成就現在的自己，而我始終相信現在的我，就是最好的我，才能往理想的自己前進。對於前端我知道需要加強自己的能力，期許自己有一天能夠成為一個獨當一面的前端工程師。</p>
-                    <span class="title">經歷</span>
+                    <span class="about__subtitle">經歷</span>
                     <ul>
-                        <li>衛武營國家藝術中心 資訊室實習生 2023.02 - 2023.06</li>
-                        <li>六角學院 影音課程實習助教 2024.02 - 2024.07</li>
+                        <li class="about__experience">衛武營國家藝術中心 資訊室實習生 2023.02 - 2023.06</li>
+                        <li class="about__experience">六角學院 影音課程實習助教 2024.02 - 2024.07</li>
                     </ul>
-                    <span class="title">技能</span>
-                    <div class="about-skill">
-                        <div class="front">
-                            <h4>Front-end</h4>
-                            <div class="front-item">
-                                <p>HTML5</p>
-                                <div class="level">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle-line"></div>
-                                    <div class="circle-line"></div>
+                    <span class="about__subtitle">技能</span>
+                    <div class="about__skill">
+                        <div class="about__frontEnd">
+                            <h4 class="about__skillTitle">Front-end</h4>
+                            <div class="about__item">
+                                <p class="about__itemName">HTML5</p>
+                                <div class="about__level">
+                                    <div class="about__circle about__circle--fill"></div>
+                                    <div class="about__circle about__circle--fill"></div>
+                                    <div class="about__circle about__circle--fill"></div>
+                                    <div class="about__circle"></div>
+                                    <div class="about__circle"></div>
                                 </div>
                             </div>
-                            <div class="front-item">
-                                <p>CSS3</p>
-                                <div class="level">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle-line"></div>
-                                    <div class="circle-line"></div>
+                            <div class="about__item">
+                                <p class="about__itemName">CSS3</p>
+                                <div class="about__level">
+                                    <div class="about__circle about__circle--fill"></div>
+                                    <div class="about__circle about__circle--fill"></div>
+                                    <div class="about__circle about__circle--fill"></div>
+                                    <div class="about__circle"></div>
+                                    <div class="about__circle"></div>
                             </div>
                             </div>
-                            <div class="front-item">
-                                <p>RWD</p>
-                                <div class="level">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle-line"></div>
-                                    <div class="circle-line"></div>
+                            <div class="about__item">
+                                <p class="about__itemName">RWD</p>
+                                <div class="about__level">
+                                    <div class="about__circle about__circle--fill"></div>
+                                    <div class="about__circle about__circle--fill"></div>
+                                    <div class="about__circle about__circle--fill"></div>
+                                    <div class="about__circle"></div>
+                                    <div class="about__circle"></div>
                             </div>
                             </div>
-                            <div class="front-item">
-                                <p>jQuery</p>
-                                <div class="level">
-                                    <div class="circle"></div>
-                                    <div class="circle-line"></div>
-                                    <div class="circle-line"></div>
-                                    <div class="circle-line"></div>
-                                    <div class="circle-line"></div>
+                            <div class="about__item">
+                                <p class="about__itemName">jQuery</p>
+                                <div class="about__level">
+                                    <div class="about__circle about__circle--fill"></div>
+                                    <div class="about__circle"></div>
+                                    <div class="about__circle"></div>
+                                    <div class="about__circle"></div>
+                                    <div class="about__circle"></div>
                             </div>
                             </div>
-   
+    
                         </div>
-                        <div class="design">
-                            <h4>Design/Other</h4>
+                        <div class="about__design">
+                            <h4 class="about__skillTitle">Design/Other</h4>
                             
-                            <div class="design-item">
-                                <p>Figma</p>
-                                <div class="level">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle-line"></div>
-                                    <div class="circle-line"></div>
-                                    <div class="circle-line"></div>
+                            <div class="about__item">
+                                <p class="about__itemName">Figma</p>
+                                <div class="about__level">
+                                    <div class="about__circle about__circle--fill"></div>
+                                    <div class="about__circle about__circle--fill"></div>
+                                    <div class="about__circle"></div>
+                                    <div class="about__circle"></div>
+                                    <div class="about__circle"></div>
                             </div>
                             </div>
-                            <div class="design-item">
-                                <p>Illustrator</p>
-                                <div class="level">
-                                    <div class="circle"></div>
-                                    <div class="circle-line"></div>
-                                    <div class="circle-line"></div>
-                                    <div class="circle-line"></div>
-                                    <div class="circle-line"></div>
+                            <div class="about__item">
+                                <p class="about__itemName">Illustrator</p>
+                                <div class="about__level">
+                                    <div class="about__circle about__circle--fill"></div>
+                                    <div class="about__circle"></div>
+                                    <div class="about__circle"></div>
+                                    <div class="about__circle"></div>
+                                    <div class="about__circle"></div>
                                 </div>
                             
                             </div>
-                            <div class="design-item">
-                                <p>PhotoShop</p>
-                                <div class="level">
-                                    <div class="circle"></div>
-                                    <div class="circle-line"></div>
-                                    <div class="circle-line"></div>
-                                    <div class="circle-line"></div>
-                                    <div class="circle-line"></div>
+                            <div class="about__item">
+                                <p class="about__itemName">PhotoShop</p>
+                                <div class="about__level">
+                                    <div class="about__circle about__circle--fill"></div>
+                                    <div class="about__circle"></div>
+                                    <div class="about__circle"></div>
+                                    <div class="about__circle"></div>
+                                    <div class="about__circle"></div>
                                 </div>
                             
                             </div>
                         </div>
                     </div>
-                    <span class="title">進修中</span>
-                    <p class="learn-content"><span>1-4個月</span>  　Bootstrap5　JavaScript　Vue or React</p>
+                    <span class="about__subtitle">進修中</span>
+                    <p><span class="about__learn">1-4個月</span>  　Bootstrap5　JavaScript　Vue or React</p>
                 </div>
                 
-
+    
             </div>
             <div class="portfolio" id="portfolio">
-                <h2>Portfolio <span>作品集</span></h2>
-                <h3>Web　網頁</h3>
-                <div class="portfolio-content">
-                    <div class="portfolio-item">
-                        <a href="https://jylee0805.github.io/BusinessCard/" target="_blank">
+                <h2 class="portfolio__title">Portfolio <span class="portfolio__titleCh">作品集</span></h2>
+                <h3 class="portfolio__subtitle">Web　網頁</h3>
+                <div class="portfolio__content">
+                    <div class="portfolio__item">
+                        <a href="https://jylee0805.github.io/BusinessCard/" target="_blank" class="portfolio__link">
                         
-                        <div class="item-img">
-                            <img src="img/bc.png" alt="">
-                            <div class="bg"></div>
+                        <div class="portfolio__imgBox">
+                            <img src="img/bc.png" alt="" class="portfolio__img">
+                            <div class="portfolio__bg"></div>
                         </div>
-                            
-                            <h4 class="item-title">名片製作</h4>
-                            <p>透過名片製作練習flex、Position：absolute及其他基礎標籤用法</p>
+                            <h4 class="portfolio__itemName">名片製作</h4>
+                            <p class="portfolio__caption">透過名片製作練習flex、Position：absolute及其他基礎標籤用法</p>
                          </a>
                     </div>
-                    <div class="portfolio-item">
-                        <a href="https://jylee0805.github.io/PSD/" target="_blank">
-                            <div class="item-img">
-                                <img src="img/psd.png" alt="">
-                                <div class="bg"></div>
+                    <div class="portfolio__item">
+                        <a href="https://jylee0805.github.io/PSD/" target="_blank" class="portfolio__link">
+                            <div class="portfolio__imgBox">
+                                <img src="img/psd.png" alt="" class="portfolio__img">
+                                <div class="portfolio__bg"></div>
                             </div>
-                        <h4 class="item-title">PSD練習</h4>
-                        <p>透過PSD製作練習切版流程以及HTML、CSS撰寫</p>
+                        <h4 class="portfolio__itemName">PSD練習</h4>
+                        <p class="portfolio__caption">透過PSD製作練習切版流程以及HTML、CSS撰寫</p>
                         </a>
                     </div>
-                    <div class="portfolio-item">
-                        <a href="https://jylee0805.github.io/RWD/" target="_blank">
-                            <div class="item-img">
-                                <img src="img/rwd.png" alt="">  
-                                <div class="bg"></div>
+                    <div class="portfolio__item">
+                        <a href="https://jylee0805.github.io/RWD/" target="_blank" class="portfolio__link">
+                            <div class="portfolio__imgBox">
+                                <img src="img/rwd.png" alt="" class="portfolio__img">  
+                                <div class="portfolio__bg"></div>
                             </div>
-                            <h4 class="item-title">RWD</h4>
-                            <p>練習斷點的設置以及觀察Flex、float在每個斷點的變化是否需要更改</p>
+                            <h4 class="portfolio__itemName">RWD</h4>
+                            <p class="portfolio__caption">練習斷點的設置以及觀察Flex、float在每個斷點的變化是否需要更改</p>
                         </a>
                         
                     </div>
-                    <div class="portfolio-item">
-                        <a href="https://jylee0805.github.io/GreenvinesInternPage/" target="_blank">
-                            <div class="item-img">
-                                <img src="img/gv.png" alt="">  
-                                <div class="bg"></div>
+                    <div class="portfolio__item">
+                        <a href="https://jylee0805.github.io/jQuery_final/" target="_blank" class="portfolio__link">
+                            <div class="portfolio__imgBox">
+                                <img src="img/jquery.png" alt="" class="portfolio__img">  
+                                <div class="portfolio__bg"></div>
                             </div>
                         
-                            <h4 class="item-title">綠藤生機-實習計畫頁面</h4>
-                            <p>透過模仿綠藤生機的實習生招募頁面練習HTML、CSS及試著去找找看是否有覺得可以優化的地方</p>
+                            <h4 class="portfolio__itemName">jQuery Plugin</h4>
+                            <p class="portfolio__caption">練習將Plugin引入至自己的網頁並且修改css為自己所需的樣式</p>
                         </a>
                     </div>
-                    <div class="portfolio-item">
-                        <a href="https://jylee0805.github.io/jQuery_final/" target="_blank">
-                            <div class="item-img">
-                                <img src="img/jquery.png" alt="">  
-                                <div class="bg"></div>
+                    <div class="portfolio__item">
+                        <a href="https://jylee0805.github.io/RWD_final/" target="_blank" class="portfolio__link">
+                            <div class="portfolio__imgBox">
+                                <img src="img/RWD_final.png" alt="" class="portfolio__img">  
+                                <div class="portfolio__bg"></div>
                             </div>
                         
-                            <h4 class="item-title">jQuery Plugin</h4>
-                            <p>練習將Plugin引入至自己的網頁並且修改css為自己所需的樣式</p>
+                            <h4 class="portfolio__itemName">六角西餐廳</h4>
+                            <p class="portfolio__caption">練習多頁式網頁、漢堡選單的撰寫以及斷點設計</p>
                         </a>
                     </div>
-                    <div class="portfolio-item">
-                        <a href="https://jylee0805.github.io/RWD_final/" target="_blank">
-                            <div class="item-img">
-                                <img src="img/RWD_final.png" alt="">  
-                                <div class="bg"></div>
+                    <div class="portfolio__item">
+                        <a href="https://jylee0805.github.io/to-do-list/" target="_blank" class="portfolio__link">
+                            <div class="portfolio__imgBox">
+                                <img src="img/todoList.png" alt="" class="portfolio__img">  
+                                <div class="portfolio__bg"></div>
                             </div>
                         
-                            <h4 class="item-title">六角西餐廳</h4>
-                            <p>練習多頁式網頁、漢堡選單的撰寫以及斷點設計</p>
+                            <h4 class="portfolio__itemName">TODO LIST</h4>
+                            <p class="portfolio__caption">練習陣列以及迴圈的應用</p>
                         </a>
                     </div>
-                    <div class="portfolio-item">
-                        <a href="https://jylee0805.github.io/to-do-list/" target="_blank">
-                            <div class="item-img">
-                                <img src="img/todoList.png" alt="">  
-                                <div class="bg"></div>
+                    <div class="portfolio__item">
+                        <a href="https://jylee0805.github.io/priceCompare/" target="_blank" class="portfolio__link">
+                            <div class="portfolio__imgBox">
+                                <img src="img/price_compare.png" alt="" class="portfolio__img">  
+                                <div class="portfolio__bg"></div>
                             </div>
                         
-                            <h4 class="item-title">TODO LIST</h4>
-                            <p>練習陣列以及迴圈的應用</p>
-                        </a>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="https://jylee0805.github.io/priceCompare/" target="_blank">
-                            <div class="item-img">
-                                <img src="img/price_compare.png" alt="">  
-                                <div class="bg"></div>
-                            </div>
-                        
-                            <h4 class="item-title">蔬菜比價網</h4>
-                            <p>練習抓取API資料、對資料做排序</p>
+                            <h4 class="portfolio__itemName">蔬菜比價網</h4>
+                            <p class="portfolio__caption">練習抓取API資料、對資料做排序</p>
                         </a>
                     </div>
                 </div>
-
-                <h3>Design　設計</h3>
-                <div class="portfolio-content">
-                    <div class="portfolio-item">
-                        <a href="https://www.figma.com/file/9J47lf1zvHXDg8YImdAZpU/%E8%BB%8A%E7%A6%8D%E6%8C%87%E5%8D%97APP?type=design&mode=design&t=csJnXKUU21jWmbbW-1" target="_blank">
+    
+                <h3 class="portfolio__subtitle">Design　設計</h3>
+                <div class="portfolio__content">
+                    <div class="portfolio__item">
+                        <a href="https://www.figma.com/file/9J47lf1zvHXDg8YImdAZpU/%E8%BB%8A%E7%A6%8D%E6%8C%87%E5%8D%97APP?type=design&mode=design&t=csJnXKUU21jWmbbW-1" target="_blank" class="portfolio__link">
                         
-                        <div class="item-img">
-                            <img src="img/caraccidentGuide.png" alt="">
-                            <div class="bg"></div>
+                        <div class="portfolio__imgBox">
+                            <img src="img/caraccidentGuide.png" alt="" class="portfolio__img">
+                            <div class="portfolio__bg"></div>
                         </div>
                             
-                            <h4 class="item-title">Figma　車禍指南APP設計</h4>                         
+                            <h4 class="portfolio__itemName">Figma　車禍指南APP設計</h4>                         
                          </a>
                     </div>
-                    <div class="portfolio-item">
-                        <a href="https://www.figma.com/file/lXgJ2JzLZdBSPwoIhRarPu/PersonalWeb?type=design&mode=design&t=csJnXKUU21jWmbbW-1" target="_blank">
-                            <div class="item-img">
-                                <img src="img/personal.png" alt="">
-                                <div class="bg"></div>
+                    <div class="portfolio__item">
+                        <a href="https://www.figma.com/file/lXgJ2JzLZdBSPwoIhRarPu/PersonalWeb?type=design&mode=design&t=csJnXKUU21jWmbbW-1" target="_blank" class="portfolio__link">
+                            <div class="portfolio__imgBox">
+                                <img src="img/personal.png" alt="" class="portfolio__img">
+                                <div class="portfolio__bg"></div>
                             </div>
-                        <h4 class="item-title">Figma　個人網頁設計 </h4>
+                        <h4 class="portfolio__itemName">Figma　個人網頁設計 </h4>
                         </a>
                     </div>
                     

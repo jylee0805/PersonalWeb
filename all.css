@@ -1,0 +1,601 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: 辰宇落雁體;
+  src: url(../PersonalWeb/ChenYuluoyan-Thin-Monospaced.eot), url(../PersonalWeb/ChenYuluoyan-Thin-Monospaced.ttf), url(../PersonalWeb/ChenYuluoyan-Thin-Monospaced.woff);
+}
+body {
+  max-width: 100%;
+  background: #FEF7E6;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 55px;
+  background: #FEF7E6;
+  position: fixed;
+  z-index: 10;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  float: left;
+  padding-top: 5px;
+}
+.header__line {
+  margin: 10px 15px 10px 0;
+  height: 25px;
+  border: 1px solid #474747;
+}
+.header__title {
+  font-family: "Yeseva One";
+  font-weight: lighter;
+}
+.header__logo {
+  background-image: url(img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  height: 50px;
+  margin-left: 15px;
+  white-space: nowrap;
+  text-indent: 101%;
+  overflow: hidden;
+  display: block;
+}
+.header__github {
+  float: right;
+  width: 35px;
+  height: 35px;
+  background-image: url(img/github-mark.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 10px 5% 10px 10px;
+  white-space: nowrap;
+  text-indent: 101%;
+  overflow: hidden;
+  display: block;
+}
+.header__github:hover {
+  background-image: url(img/github.png);
+}
+.header__menu {
+  display: flex;
+  margin-left: 50px;
+  float: right;
+  padding-top: 10px;
+}
+@media (max-width: 650px) {
+  .header__menu {
+    display: none;
+    margin-left: 50px;
+    float: right;
+    padding-top: 10px;
+  }
+}
+.header__link {
+  text-decoration: none;
+  display: block;
+  padding: 10px 25px;
+  color: #474747;
+  font-weight: 700;
+}
+.header__link:hover {
+  color: #FFB000;
+}
+
+.content {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  font-family: 辰宇落雁體;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 5%;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .main {
+    display: block;
+    position: relative;
+    padding-top: 20%;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    margin-bottom: 10%;
+  }
+}
+.main__imgBox {
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .main__imgBox {
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    left: 0;
+  }
+}
+@media (max-width: 600px) {
+  .main__imgBox {
+    position: absolute;
+    width: 70%;
+    top: 10%;
+    left: 0;
+  }
+}
+.main__img {
+  max-width: 120%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  .main__img {
+    max-width: 120%;
+  }
+}
+@media (max-width: 768px) {
+  .main__img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .main__img {
+    z-index: -1;
+  }
+}
+.main__title {
+  background-image: url(img/title-bg.png);
+  background-repeat: no-repeat;
+  background-size: 180%;
+  background-position: 0 40%;
+  padding: 20px 0 20px 8%;
+  margin: 10% 0 15%;
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .main__title {
+    background-size: 140%;
+    background-position: 40% 40%;
+    padding: 0 0 0 15%;
+    margin: 0 0 0 0;
+    width: 90%;
+    text-align: left;
+  }
+}
+@media (max-width: 600px) {
+  .main__title {
+    position: relative;
+    padding: 0 0 0 10%;
+    margin: 20% 0 0 0;
+    background-image: linear-gradient(to top, rgb(245, 245, 245), rgba(245, 245, 245, 0));
+  }
+}
+.main__name {
+  font-size: 72px;
+}
+@media (max-width: 1000px) {
+  .main__name {
+    font-size: 64px;
+  }
+}
+@media (max-width: 768px) {
+  .main__name {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .main__name {
+    text-align: right;
+    padding-right: 10%;
+    font-size: 40px;
+    padding-top: 15%;
+  }
+}
+.main__motto {
+  font-size: 48px;
+}
+@media (max-width: 1000px) {
+  .main__motto {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .main__motto {
+    font-size: 28px;
+    text-align: center;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 600px) {
+  .main__motto {
+    padding-right: 10%;
+    text-align: right;
+    font-size: 26px;
+  }
+}
+@media (max-width: 460px) {
+  .main__motto {
+    font-size: 20px;
+  }
+}
+.main__expectation {
+  font-size: 24px;
+}
+.main__expectation span::before {
+  content: "";
+}
+@media (max-width: 768px) {
+  .main__expectation span::before {
+    content: "\a          ";
+    white-space: pre;
+  }
+}
+@media (max-width: 1000px) {
+  .main__expectation {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .main__expectation {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .main__expectation {
+    padding-right: 10%;
+    text-align: right;
+    font-size: 18px;
+    padding-bottom: 10%;
+  }
+}
+@media (max-width: 460px) {
+  .main__expectation {
+    font-size: 16px;
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  padding-top: 55px;
+}
+@media (max-width: 768px) {
+  .about {
+    display: block;
+    padding-top: 55px;
+  }
+}
+@media (max-width: 600px) {
+  .about {
+    display: block;
+    padding-top: 55px;
+  }
+}
+.about__title {
+  padding: 0 6%;
+  font-family: "Yeseva One";
+  font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #2B2B2B;
+  white-space: pre;
+}
+@media (max-width: 1000px) {
+  .about__title {
+    padding: 0 3%;
+    font-size: 36px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 768px) {
+  .about__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .about__title {
+    font-size: 24px;
+  }
+}
+.about__titleCh {
+  font-size: 28px;
+  letter-spacing: 1em;
+}
+.about__titleCh::before {
+  content: "\a";
+}
+@media (max-width: 768px) {
+  .about__titleCh::before {
+    content: "";
+  }
+}
+@media (max-width: 768px) {
+  .about__titleCh {
+    padding-left: 1em;
+  }
+}
+@media (max-width: 600px) {
+  .about__titleCh {
+    font-size: 24px;
+    padding: 0 1%;
+    letter-spacing: 10px;
+  }
+}
+.about__content {
+  width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .about__content {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .about__content {
+    width: 90%;
+  }
+}
+.about__subtitle {
+  font-size: 36px;
+  background-image: url(img/title.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 1.5%;
+  padding: 20px;
+  font-family: 辰宇落雁體;
+  line-height: 1.5;
+  color: #1B2F4D;
+}
+.about__introduce {
+  text-align: justify;
+  width: 90%;
+}
+@media (max-width: 1000px) {
+  .about__introduce {
+    text-align: justify;
+    width: 90%;
+  }
+}
+.about__highlight {
+  font-weight: 700;
+}
+.about__experience, .about__content p {
+  color: #474747;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  margin-left: 3%;
+}
+.about__skill {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.about__frontEnd, .about__design {
+  width: 45%;
+}
+.about__skillTitle {
+  font-size: 18px;
+  line-height: 2;
+  font-family: Noto Sans;
+  font-weight: 600;
+  color: #474747;
+  margin-left: 25px;
+}
+.about__itemName {
+  display: inline-block;
+  width: 25%;
+  padding-left: 15px;
+  line-height: 2;
+}
+.about__level {
+  vertical-align: middle;
+  display: inline-block;
+  padding-left: 10%;
+}
+@media (max-width: 768px) {
+  .about__level {
+    padding-left: 15%;
+  }
+}
+@media (max-width: 600px) {
+  .about__level {
+    margin-left: 5%;
+  }
+}
+.about__circle {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #474747;
+  border-radius: 14px;
+}
+.about__circle--fill {
+  background: #474747;
+}
+.about__learn {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.portfolio {
+  padding-top: 55px;
+}
+.portfolio__title {
+  font-family: "Yeseva One";
+  font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #2B2B2B;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 600px) {
+  .portfolio__title {
+    font-size: 28px;
+  }
+}
+.portfolio__titleCh {
+  font-size: 28px;
+  letter-spacing: 1em;
+}
+@media (max-width: 600px) {
+  .portfolio__titleCh {
+    font-size: 28px;
+    letter-spacing: 10px;
+  }
+}
+.portfolio__subtitle {
+  font-family: "Yeseva One";
+  font-size: 28px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #2B2B2B;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  margin-top: 10px;
+}
+@media (max-width: 1000px) {
+  .portfolio__subtitle {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+@media (max-width: 600px) {
+  .portfolio__subtitle {
+    font-size: 24px;
+  }
+}
+.portfolio__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin: 0 0 0 5%;
+}
+.portfolio__item {
+  width: 31.3333%;
+  margin-bottom: 20px;
+}
+.portfolio__item:hover .portfolio__bg {
+  background: #FFB000;
+}
+.portfolio__item:hover .portfolio__itemName {
+  color: #FFB000;
+}
+@media (max-width: 1000px) {
+  .portfolio__item {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .portfolio__item {
+    width: 98%;
+    margin-left: 5%;
+    margin-bottom: 50px;
+  }
+}
+.portfolio__link {
+  text-decoration: none;
+  color: #1B2F4D;
+  line-height: 1.5;
+}
+.portfolio__caption {
+  padding: 0 8% 0 0;
+}
+.portfolio__imgBox {
+  position: relative;
+  margin-bottom: 25px;
+  height: auto;
+}
+.portfolio__img {
+  display: block;
+  width: 85%;
+  border: 2px solid #FFB000;
+}
+.portfolio__bg {
+  position: absolute;
+  background: #1B2F4D;
+  width: 55%;
+  height: 65%;
+  bottom: -8%;
+  right: 10%;
+  z-index: -1;
+}
+.portfolio__itemName {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: Noto Sans;
+  font-weight: 600;
+  color: #1B2F4D;
+}/*# sourceMappingURL=all.css.map */

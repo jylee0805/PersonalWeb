@@ -1,8 +1,7 @@
 @import "reset";
 @import "mixin";
-$bgColor:#FEF7E6;
-$titleColor:#2B2B2B;
-//#2B2B2B  #FFB000 #1B2F4D
+@import "variable";
+
 
 @font-face{
     font-family: 辰宇落雁體;
@@ -32,7 +31,7 @@ body{
     &__line{
         margin: 10px 15px 10px 0;
         height: 25px;
-        border: 1px solid #474747;
+        border: 1px solid $defaultColor;
     }
     &__title{
         font-family: 'Yeseva One';
@@ -68,19 +67,16 @@ body{
 
         @include w650{
             display:none;
-            margin-left: 50px;
-            float: right;
-            padding-top: 10px;
         }
     }
     &__link{
         text-decoration: none;
         display: block;
         padding: 10px 25px;
-        color: #474747;
+        color: $defaultColor;
         font-weight: 700;
         &:hover{
-            color: #FFB000;
+            color: $primaryColor;
         }
     }
 }
@@ -108,15 +104,12 @@ body{
         width: 40%;
         @include w768{
             position: absolute;
-            width: 40%;
             top: 20%;
             left: 0;
         }
         @include w600{
-            position: absolute;
             width: 70%;
             top: 10%;
-            left: 0;
         }
     }
     &__img{
@@ -229,12 +222,8 @@ body{
 
     @include w768{
         display: block;
-        padding-top: 55px;
     }
-    @include w600{
-        display: block;
-        padding-top: 55px;
-    }
+
     &__title{
         padding: 0 6%;
         font-family:'Yeseva One';
@@ -247,14 +236,13 @@ body{
         @include w1000{
             padding: 0 3%;
             font-size: 36px;
-            letter-spacing: 1px;  
         }
         @include w768{
             text-align: center;
             margin-bottom: 20px;
         }
         @include w600{
-            font-size: 24px;
+            font-size: 28px;
         }
     }
     &__titleCh{
@@ -297,22 +285,17 @@ body{
         padding: 20px;
         font-family: 辰宇落雁體;
         line-height: 1.5;
-        color: #1B2F4D;
+        color: $secondaryColor;
     }
     &__introduce{
         text-align: justify;
         width: 90%;
-
-        @include w1000{
-            text-align: justify;
-            width: 90%;
-        }
     }
     &__highlight{
         font-weight: 700;
     }
     &__experience,&__content p{
-        color: #474747;
+        color: $defaultColor;
         font-size: 18px;
         letter-spacing: 1.5px;
         line-height: 30px;
@@ -331,7 +314,7 @@ body{
         line-height: 2;
         font-family: Noto Sans;
         font-weight: 600;
-        color: #474747;
+        color: $defaultColor;
         margin-left: 25px;
     }
     &__itemName{
@@ -356,11 +339,11 @@ body{
         display: inline-block;
         width: 14px;
         height: 14px;
-        border: 2px solid #474747 ;
+        border: 2px solid $defaultColor ;
         border-radius: 14px;
     }
     &__circle--fill{
-        background:#474747 ;
+        background:$defaultColor ;
     }
     &__learn{
         font-weight: 700;
@@ -387,7 +370,6 @@ body{
         font-size: 28px;
         letter-spacing: 1em;
         @include w600{
-            font-size: 28px;
             letter-spacing: 10px;
         }
     }
@@ -421,10 +403,10 @@ body{
         margin-bottom: 20px;  
        
         &:hover .portfolio__bg{
-            background: #FFB000;
+            background: $primaryColor;
         }
         &:hover .portfolio__itemName{
-            color: #FFB000;
+            color: $primaryColor;
         }
         @include w1000{
             width: 48%;
@@ -438,7 +420,7 @@ body{
     }
     &__link{
         text-decoration: none;
-        color: #1B2F4D;
+        color: $secondaryColor;
         line-height: 1.5;
     }
     &__caption{
@@ -452,11 +434,11 @@ body{
     &__img{
         display: block;
         width: 85%;
-        border: 2px solid #FFB000;
+        border: 2px solid $primaryColor;
     }
     &__bg{
         position: absolute;
-        background: #1B2F4D;
+        background: $secondaryColor;
         width: 55%;
         height: 65%;
         bottom: -8%;
@@ -468,6 +450,6 @@ body{
         line-height: 1.5;
         font-family: Noto Sans;
         font-weight: 600;
-        color: #1B2F4D;
+        color: $secondaryColor;
     }
 }

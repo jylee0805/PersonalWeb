@@ -130,9 +130,6 @@ body {
 @media (max-width: 650px) {
   .header__menu {
     display: none;
-    margin-left: 50px;
-    float: right;
-    padding-top: 10px;
   }
 }
 .header__link {
@@ -177,17 +174,14 @@ body {
 @media (max-width: 768px) {
   .main__imgBox {
     position: absolute;
-    width: 40%;
     top: 20%;
     left: 0;
   }
 }
 @media (max-width: 600px) {
   .main__imgBox {
-    position: absolute;
     width: 70%;
     top: 10%;
-    left: 0;
   }
 }
 .main__img {
@@ -330,13 +324,6 @@ body {
 @media (max-width: 768px) {
   .about {
     display: block;
-    padding-top: 55px;
-  }
-}
-@media (max-width: 600px) {
-  .about {
-    display: block;
-    padding-top: 55px;
   }
 }
 .about__title {
@@ -352,7 +339,6 @@ body {
   .about__title {
     padding: 0 3%;
     font-size: 36px;
-    letter-spacing: 1px;
   }
 }
 @media (max-width: 768px) {
@@ -363,7 +349,7 @@ body {
 }
 @media (max-width: 600px) {
   .about__title {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 .about__titleCh {
@@ -418,12 +404,6 @@ body {
 .about__introduce {
   text-align: justify;
   width: 90%;
-}
-@media (max-width: 1000px) {
-  .about__introduce {
-    text-align: justify;
-    width: 90%;
-  }
 }
 .about__highlight {
   font-weight: 700;
@@ -511,7 +491,6 @@ body {
 }
 @media (max-width: 600px) {
   .portfolio__titleCh {
-    font-size: 28px;
     letter-spacing: 10px;
   }
 }
